@@ -2,6 +2,7 @@ import 'package:email_validator/email_validator.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:task_manager/ui/screens/sign_up_screen.dart';
 import 'package:task_manager/ui/widgets/screen_background.dart';
 
 import '../utils/assets_paths.dart';
@@ -121,7 +122,7 @@ class _SignInScreenState extends State<SignInScreen> {
   }
   }
   void _onTapSignUpButton(){
-
+    Navigator.pushReplacementNamed(context, SignUpScreen.name);
   }
   void _onTapForgotPasswordButton(){
 
