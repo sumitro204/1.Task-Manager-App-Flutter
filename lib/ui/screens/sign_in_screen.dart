@@ -9,6 +9,8 @@ import '../utils/assets_paths.dart';
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
 
+  static const String name = '/sign-in';
+
   @override
   State<SignInScreen> createState() => _SignInScreenState();
 }
