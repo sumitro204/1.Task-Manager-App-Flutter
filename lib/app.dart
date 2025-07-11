@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:task_manager/ui/screens/change_password_screen.dart';
+import 'package:task_manager/ui/screens/forgot_password_email_screen.dart';
+import 'package:task_manager/ui/screens/pin_verification_screen.dart';
 import 'package:task_manager/ui/screens/sign_in_screen.dart';
 import 'package:task_manager/ui/screens/sign_up_screen.dart';
 import 'package:task_manager/ui/screens/splash_screen.dart';
@@ -19,6 +22,7 @@ class _TaskManagerAppState extends State<TaskManagerApp> {
         // colorSchemeSeed: Colors.green,
         textTheme: TextTheme(
           titleLarge: TextStyle(fontSize: 28, fontWeight: FontWeight.w700),
+
         ),
         inputDecorationTheme: InputDecorationTheme(
           fillColor: Colors.white,
@@ -52,6 +56,9 @@ class _TaskManagerAppState extends State<TaskManagerApp> {
          SplashScreen.name: (context) => SplashScreen(),
          SignInScreen.name : (context) => SignInScreen(),
          SignUpScreen.name : (context) => SignUpScreen(),
+         ForgotPasswordEmailScreen.name: (context) => ForgotPasswordEmailScreen(),
+        PinVerificationScreen.name : (context) => PinVerificationScreen(),
+        ChangePasswordScreen.name : (context) => ChangePasswordScreen(),
       },
     );
   }

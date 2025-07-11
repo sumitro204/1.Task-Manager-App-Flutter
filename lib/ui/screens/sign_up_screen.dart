@@ -159,10 +159,11 @@ class _SignInScreenState extends State<SignUpScreen> {
   void _onTapSignUpButton(){
     if(_formKey.currentState!.validate()){
       // TODO: Sign in with API
+      Navigator.pushNamed(context, SignInScreen.name);
     }
   }
   void _onTapSignInButton(){
-    Navigator.popAndPushNamed(context, SignInScreen.name);
+    Navigator.pushNamed(context, SignInScreen.name);
   }
 
 
